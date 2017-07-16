@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="입력하세요"
+        android:maxLines="5"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0/80 바이트"
+        android:textAlignment="textEnd"
+        android:textColor="#ff0000"
+        android:layout_below="@+id/edt"/>
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="false"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="60dp"
+        android:text="전송" />
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnSend"
+        android:layout_alignBottom="@+id/btnSend"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/btnSend"
+        android:layout_toRightOf="@+id/btnSend"
+        android:text="닫기" />
+
+
+</RelativeLayout>
